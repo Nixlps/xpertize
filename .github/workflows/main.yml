@@ -17,6 +17,6 @@ jobs:
         server: ${{ secrets.ftp_host }}
         username: ${{ secrets.ftp_username }}
         password: ${{ secrets.ftp_password }}
-        server-dir: public-html/
+        server-dir: public_html/
         exclude: 
           README.md
