@@ -2,8 +2,6 @@ on:
   push: 
     branches: 
         - main
-    paths:
-        - 'dist/**'
 name: 🚀 Deploy website on push
 jobs:
   web-deploy:
@@ -20,3 +18,4 @@ jobs:
         username: ${{ secrets.ftp_username }}
         password: ${{ secrets.ftp_password }}
         server-dir: public_html/
+        local-dir: ./dist/
