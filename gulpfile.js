@@ -24,7 +24,7 @@ const autoprefixer = require('gulp-autoprefixer');
 const cssMinify = require('gulp-clean-css');
 
 function styles() {
-    return src(['./styles/reset.css', './styles/common.css', './styles/header.css','./styles/first-section.css'])
+    return src(['./styles/reset.css', './styles/common.css', './styles/header.css', './styles/first-section.css', './styles/second-section.css'])
         .pipe( concat('style.css'))
         .pipe( autoprefixer('last 2 versions') )
         .pipe( cssMinify() )
