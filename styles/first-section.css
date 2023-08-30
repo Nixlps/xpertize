@@ -1,0 +1,32 @@
+.first-section .title{
+  font-family: 'InterBold';
+  font-size: 1.8rem;
+  line-height: 2.5rem;
+  margin-bottom: 2.2rem;
+}
+
+.first-section .list li{
+  display: flex;
+  align-items: center;
+  font-family: 'OpenSans';
+  font-size: 1rem;
+  background-image: url("/assets/icons/green-check.png"); 
+  background-repeat: no-repeat; 
+  height: 2rem;
+  line-height: 1.5rem;
+  margin-bottom: 3rem;
+  padding-left: 44px;
+}
+
+.first-section .list li:first-child{
+  margin-bottom: 2.2rem;
+}
+
+.first-section .img{
+  display: none;
+}
+
+.first-section .cta-btn{
+    font-size: 1rem;
+    padding: 1rem 1.5rem;
+}
