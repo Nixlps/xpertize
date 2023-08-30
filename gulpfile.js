@@ -30,7 +30,7 @@ function styles() {
 const jsMinify = require('gulp-terser');
 
 function scripts() {
-    return src(['./scripts/highlight-link.js'])
+    return src(['./scripts/highlight-link.js', './scripts/tns.js'])
     .pipe( concat('bundle.js'))
     .pipe( jsMinify() )
     .pipe( dest('./') )

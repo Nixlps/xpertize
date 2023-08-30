@@ -20,6 +20,9 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
+    max-width: 1500px;
+    margin: auto;
+    margin-bottom: 4rem;
   }
 
   .navigation{
@@ -27,9 +30,8 @@
   }
 
   .navigation .navigation-link{
-    font-size: 0.8rem;
     color: rgba( 0, 0, 0, 1 );
-    margin-right: 1.2rem;
+    margin-right: 0.5rem;
   }
 
   .navigation .active{
@@ -44,5 +46,12 @@
     height: 2px;
     background-color: rgba( 0, 131, 184, 1 );
     bottom: -4px;
+  }
+}
+
+@media(min-width: 1100px){
+  .navigation .navigation-link{ 
+    font-size: 1rem; 
+    margin-right: 1.2rem;
   }
 }

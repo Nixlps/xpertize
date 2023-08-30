@@ -22,7 +22,7 @@ html { font-size: calc( 15px + 0.390625vw ); }
 
 .container{ padding: calc( 8px + 1.5625vw ); }
 
-.blue-to-white{ background: linear-gradient( 90deg, rgba( 228, 242, 248, 1 ) 0%, rgba( 248, 252, 253, 1 ) 100% ); }
+.blue-to-white{ background: linear-gradient( 80deg, rgba( 228, 242, 248, 1 ) 40%, rgba( 248, 252, 253, 1 ) 100% ); }
 
 .solid-blue{ background-color: rgba( 0, 131, 184, 1 ); }
 
@@ -40,6 +40,11 @@ html { font-size: calc( 15px + 0.390625vw ); }
   background-color: rgba(1, 156, 219, 1);
 }
 
-.glider-track {
-  scrollbar-width: none;
+@media(min-width: 1024px){
+  .blue-to-white{ background: linear-gradient(137deg,rgba( 228, 242, 248, 1 ) 0%,rgba( 248, 252, 253, 1 ) 60%); }
+
+  .cta-btn{ 
+    font-size: 0.9rem; 
+    padding: 0.9rem 1.15rem;
+  }
 }
