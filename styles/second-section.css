@@ -1,0 +1,62 @@
+.second-section > div {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: unset;
+  align-items: center;
+}
+
+.second-section img {
+  max-width: 500px;
+  width: 100%;
+  margin-bottom: 2rem;
+}
+
+.second-section .title {
+  font-family: 'InterBold';
+  color: rgba( 255, 255, 255, 1 );
+  font-size: 2.2rem;
+  line-height: 3rem;
+  margin-bottom: 3rem;
+}
+
+.second-section .list li {
+    display: flex;
+    align-items: center;
+    font-family: 'OpenSans';
+    font-size: 1rem;
+    color: rgba( 255, 255, 255, 1 );
+    background-image: url("/assets/icons/green-check.png"); 
+    background-repeat: no-repeat; 
+    height: 1.7rem;
+    line-height: 1.5rem;
+    margin-bottom: 2.5rem;
+    padding-left: 44px;
+}
+
+.second-section .list li:nth-child(1) { background-image: url("/assets/icons/megaphone.png"); }
+.second-section .list li:nth-child(2) { background-image: url("/assets/icons/whatsapp.png"); }
+.second-section .list li:nth-child(3) { background-image: url("/assets/icons/motorbike.png"); }
+.second-section .list li:nth-child(4) { background-image: url("/assets/icons/list.png"); }
+.second-section .list li:nth-child(5) { background-image: url("/assets/icons/bag.png"); }
+.second-section .list li:nth-child(6) { background-image: url("/assets/icons/shop.png"); }
+
+@media(min-width: 1024px){
+  .second-section > div {
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
+    width: 60rem;
+    margin: auto;
+  }
+
+  .second-section img{
+    max-width: 600px;
+    width: 100%;
+    margin-top: 2rem;
+    margin-bottom: 0;
+  }
+
+  .second-section .list li {
+    font-size: 0.8rem;
+    margin-bottom: 1rem;
+}
+}
