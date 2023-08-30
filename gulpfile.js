@@ -5,9 +5,7 @@ const browserSync = require('browser-sync').create();
 // html
 
 function html() {
-    return src(['./page-sections/header.html', './page-sections/footer.html'])
-        .pipe( concat('index.html'))
-        .pipe( dest ('./') )
+    return src('index.html')
         .pipe( dest('./dist/') )
         .pipe( browserSync.stream() )
 }
@@ -18,14 +16,13 @@ const autoprefixer = require('gulp-autoprefixer');
 const cssMinify = require('gulp-clean-css');
 
 function styles() {
-    return src('./styles/*.css')
+    return src(['./styles/reset.css', './styles/common.css', './styles/header.css','./styles/first-section.css'])
         .pipe( concat('style.css'))
         .pipe( autoprefixer('last 2 versions') )
         .pipe( cssMinify() )
         .pipe( dest('./') )
         .pipe( dest('./dist/') )
         .pipe( browserSync.stream() )
-
 }
 
 // script
@@ -33,7 +30,7 @@ function styles() {
 const jsMinify = require('gulp-terser');
 
 function scripts() {
-    return src('./scripts/*.js')
+    return src(['./scripts/highlight-link.js', './scripts/tns.js'])
     .pipe( concat('bundle.js'))
     .pipe( jsMinify() )
     .pipe( dest('./') )

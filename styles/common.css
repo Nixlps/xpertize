@@ -1,0 +1,50 @@
+@font-face {
+  font-family: 'Inter';
+  src: url('/assets/fonts/inter/Inter-Regular.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'InterBold';
+  src: url('/assets/fonts/inter/Inter-Bold.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'OpenSans';
+  src: url('/assets/fonts/open-sans/OpenSans-Regular.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'OpenSansBold';
+  src: url('/assets/fonts/open-sans/OpenSans-Bold.woff2') format('woff2');
+}
+
+html { font-size: calc( 15px + 0.390625vw ); }
+
+.container{ padding: calc( 8px + 1.5625vw ); }
+
+.blue-to-white{ background: linear-gradient( 80deg, rgba( 228, 242, 248, 1 ) 40%, rgba( 248, 252, 253, 1 ) 100% ); }
+
+.solid-blue{ background-color: rgba( 0, 131, 184, 1 ); }
+
+.cta-btn{
+  display: inline-block;
+  font-size: 0.75rem;
+  background-color: rgba( 0, 131, 184, 1 );
+  color: rgba(255, 255, 255, 1);
+  padding: 0.75rem 1rem;
+  border-radius: 40px;
+  cursor: pointer;
+}
+
+.cta-btn:hover{
+  background-color: rgba(1, 156, 219, 1);
+}
+
+@media(min-width: 1024px){
+  .blue-to-white{ background: linear-gradient(137deg,rgba( 228, 242, 248, 1 ) 0%,rgba( 248, 252, 253, 1 ) 60%); }
+
+  .cta-btn{ 
+    font-size: 0.9rem; 
+    padding: 0.9rem 1.15rem;
+  }
+}
