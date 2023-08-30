@@ -10,6 +10,14 @@ function html() {
         .pipe( browserSync.stream() )
 }
 
+// assets
+
+function assets() {
+    return src('./assets/**')
+        .pipe( dest('./dist/assets') )
+        .pipe( browserSync.stream() )
+}
+
 // styles
 
 const autoprefixer = require('gulp-autoprefixer');
@@ -54,4 +62,4 @@ function watchTask(){
     watch('index.html').on('change', browserSync.reload);
 }
 
-exports.default = series(html, styles, scripts, watchTask);
+exports.default = series(html, styles, scripts, assets, watchTask);
