@@ -30,7 +30,8 @@ function styles() {
             './styles/header.css', 
             './styles/first-section.css', 
             './styles/second-section.css',
-            './styles/third-section.css'
+            './styles/third-section.css',
+            './styles/fourth-section.css',
         ])
         .pipe( concat('style.css'))
         .pipe( autoprefixer('last 2 versions') )
@@ -47,7 +48,8 @@ const jsMinify = require('gulp-terser');
 function scripts() {
     return src([
             './scripts/highlight-link.js', 
-            './scripts/tns.js'
+            './scripts/tns.js',
+            './scripts/product-selection.js',
         ])
     .pipe( concat('bundle.js'))
     .pipe( jsMinify() )
