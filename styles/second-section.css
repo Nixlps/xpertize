@@ -41,6 +41,10 @@
 .second-section .list li:nth-child(6) { background-image: url("/assets/icons/shop.png"); }
 
 @media(min-width: 1024px){
+  .second-section{
+    overflow: hidden;
+  }
+
   .second-section > div {
     flex-direction: row-reverse;
     justify-content: space-evenly;
@@ -50,7 +54,7 @@
 
   .second-section img{
     max-width: 600px;
-    width: 100%;
+    width: 90%;
     margin-top: 2rem;
     margin-bottom: 0;
   }
