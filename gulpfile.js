@@ -32,6 +32,7 @@ function styles() {
             './styles/second-section.css',
             './styles/third-section.css',
             './styles/fourth-section.css',
+            './styles/fifth-section.css',
         ])
         .pipe( concat('style.css'))
         .pipe( autoprefixer('last 2 versions') )
@@ -50,6 +51,7 @@ function scripts() {
             './scripts/highlight-link.js', 
             './scripts/tns.js',
             './scripts/product-selection.js',
+            './scripts/form.js',
         ])
     .pipe( concat('bundle.js'))
     .pipe( jsMinify() )
