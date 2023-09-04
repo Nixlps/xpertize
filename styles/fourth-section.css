@@ -92,6 +92,7 @@
     display: flex;
     align-items: center;
     max-width: 1200px;
+    min-height: 20rem;
     margin: auto;
   }
 

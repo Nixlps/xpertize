@@ -1,0 +1,107 @@
+.form-wrapper{
+  position: relative;
+  margin-bottom: 4rem;
+}
+
+.form-wrapper .fun-squares{
+  position: absolute;
+}
+
+.fun-squares.yellow{
+  top: -30px;
+  left: -8px;
+}
+
+.fun-squares.blue{
+  right: 0;
+  top: 15px;
+}
+
+.fun-squares.small-blue{
+  right: -8px;
+  top: 300px;
+}
+
+.form-wrapper .title{
+  font-family: 'InterBold';
+  font-size: 1.5rem;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+.form-wrapper .desc{
+  font-family: 'OpenSans';
+  font-size: 1rem;
+  line-height: 2rem;
+  color: rgba(138, 143, 143, 1);
+  margin-bottom: 2rem;
+}
+
+.form-wrapper .form{
+  width: 18rem;
+  margin: auto;
+}
+
+.form input{
+  font-family: 'OpenSans';
+  padding: 1rem 1.5rem;
+  border: 1px solid rgba(47, 53, 55, 1);
+  border-radius: 5px;
+  margin-bottom: 2rem;
+  background: transparent;
+  width: -webkit-fill-available;
+}
+
+.form .cta-btn{
+  float: right;
+}
+
+.form-wrapper .form-img{
+  display: none;
+}
+
+.sucess-msg{
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  height: 21rem;
+  padding: 2rem;
+}
+
+.sucess-msg p{
+  font-family: 'Inter';
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.sucess-msg p:last-child{
+  font-size: 1.2rem;
+}
+
+@media(min-width: 1024px){
+  .form-wrapper{
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 0;
+  }
+
+  .form-wrapper .fun-squares{
+    display: none;
+  }
+
+  .form-wrapper .form{
+    width: 28rem;
+    margin: 0;
+  }
+
+  .form-wrapper .form-img{
+    display: block;
+    width: 25rem;
+    height: fit-content;
+    margin-top: auto;
+    margin-bottom: -50px;
+  }
+
+}
