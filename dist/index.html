@@ -13,16 +13,16 @@
             <img class="logo" src="/assets/images/logo.png" alt="Logo Xpertize" title="Logo Xpertize">
             
             <nav class="navigation">
-                <a href="#about" class="navigation-link"> Sobre nós </a>
-                <a href="#" class="navigation-link"> Como trabalhamos </a>
-                <a href="#" class="navigation-link"> Plataformas </a>
-                <a href="#" class="navigation-link"> Produtos </a>
+                <a href="#first-section" class="navigation-link"> Sobre nós </a>
+                <a href="#second-section" class="navigation-link"> Como trabalhamos </a>
+                <a href="#third-section" class="navigation-link"> Plataformas </a>
+                <a href="#fourth-section" class="navigation-link"> Produtos </a>
             </nav>
 
             <a class="cta-btn" href="#form-section"> Solicitar orçamento </a>
         </header>
 
-        <section class="first-section" id="about">
+        <section class="first-section" id="first-section">
             <div class="main-content">
                 <div>
                     <h1 class="title"> Impulsione os resultados e a maturidade digital da sua empresa </h1>
@@ -54,7 +54,7 @@
         </section>
     </div>
 
-    <section class="solid-blue container second-section">
+    <section class="solid-blue container second-section" id="second-section">
         <div>
             <div> <img src="/assets/images/notebook-gates.png" alt="Melhore no digital" title="Melhore no digital"> </div>
             
@@ -73,7 +73,7 @@
         </div>
     </section>
 
-    <section class="container blue-to-white third-section">
+    <section class="container blue-to-white third-section" id="third-section">
         <div> <img src="/assets/images/solar-system.png" alt="Sistema Solar Midias Digitais" title="Sistema Solar Midias Digitais"> </div>
 
         <div class="text">
@@ -97,7 +97,7 @@
         </div>
     </section>
 
-    <section class="container solid-blue">
+    <section class="container solid-blue" id="fourth-section">
         <div class="product-selectors">
             <div class="media active"> Mídias pagas </div>
             <div class="seo"> SEO </div>
@@ -118,7 +118,7 @@
             </div>
 
             <div class="product-content" id="seo">
-                <div class="img"><img src="/assets/images/midias.png" alt="Megafone" title="Megafone"></div>
+                <div class="img"><img src="/assets/images/search.png" alt="SEO" title="SEO"></div>
                 
                 <div class="text">
                     <h2 class="title">SEO</h2>
@@ -128,7 +128,7 @@
             </div>
 
             <div class="product-content" id="cro">
-                <div class="img"><img src="/assets/images/midias.png" alt="Megafone" title="Megafone"></div>
+                <div class="img"><img src="/assets/images/graph.png" alt="CRO" title="CRO"></div>
                 
                 <div class="text">
                     <h2 class="title">CRO</h2>
@@ -138,7 +138,7 @@
             </div>
 
             <div class="product-content" id="website">
-                <div class="img"><img src="/assets/images/midias.png" alt="Megafone" title="Megafone"></div>
+                <div class="img"><img src="/assets/images/webdev.png" alt="Webdev" title="Webdev"></div>
                 
                 <div class="text">
                     <h2 class="title">Website</h2>
@@ -149,15 +149,23 @@
         </div>
     </section>
 
-    <section class="container blue-to-white">
+    <section class="container blue-to-white" id="form-section">
+        
         <div class="form-wrapper">
-
-            <div class="text" id="form-section">
-                <h2 class="title"> Solicite um orçamento </h2>
-                <p class="desc"> Nos envie uma mensagem e entraremos em contato para entender o serviço que melhor atende às suas necessidades </p>
-            </div>
+            
+            <img src="/assets/images/blue-square.png" class="fun-squares blue">
+            
+            <img src="/assets/images/yellow-square.png" class="fun-squares yellow">
+            
+            <img src="/assets/images/small-blue-square.png" class="fun-squares small-blue">
 
             <form class="form">
+                
+                <div class="text" >
+                    <h2 class="title"> Solicite um orçamento </h2>
+                    <p class="desc"> Nos envie uma mensagem e entraremos em contato para entender o serviço que melhor atende às suas necessidades </p>
+                </div>
+
                 <input 
                     id="name" 
                     type="text" 
@@ -192,8 +200,16 @@
                     placeholder="Mensagem"
                 >
 
-                <button type="button"> Solicitar orçamento </button>
+                <button class="cta-btn" type="button"> Solicitar orçamento </button>
             </form>
+
+            <img class="form-img" src="/assets/images/form-guy.png" alt="Preencha o formulário ao lado!"  title="Preencha o formulário ao lado!">
+
+        </div>
+
+        <div class="sucess-msg">
+            <p>Envio feito com sucesso!</p> 
+            <p>Em breve responderemos seu contato.</p>
         </div>
     </section>
 
@@ -201,7 +217,7 @@
     <footer>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
         <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"> </script>
-        <script type="text/javascript"> (function(){ emailjs.init("SIklw5qfuLoecQBi3"); })(); </script>
+        <script type="text/javascript"> (function(){ emailjs.init("W7TDB4bDdP6ngk8LT"); })(); </script>
         <script src="bundle.js"></script>
     </footer>
 </body>
