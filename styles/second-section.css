@@ -33,16 +33,19 @@
     padding-left: 44px;
 }
 
-.second-section .list li:nth-child(1) { background-image: url("/assets/icons/megaphone.png"); }
-.second-section .list li:nth-child(2) { background-image: url("/assets/icons/whatsapp.png"); }
-.second-section .list li:nth-child(3) { background-image: url("/assets/icons/motorbike.png"); }
-.second-section .list li:nth-child(4) { background-image: url("/assets/icons/list.png"); }
-.second-section .list li:nth-child(5) { background-image: url("/assets/icons/bag.png"); }
-.second-section .list li:nth-child(6) { background-image: url("/assets/icons/shop.png"); }
+.second-section .list li:nth-child(1) { background-image: url("/assets/icons/megaphone.svg"); }
+.second-section .list li:nth-child(2) { background-image: url("/assets/icons/whatsapp.svg"); }
+.second-section .list li:nth-child(3) { background-image: url("/assets/icons/motorbike.svg"); }
+.second-section .list li:nth-child(4) { background-image: url("/assets/icons/list.svg"); }
+.second-section .list li:nth-child(5) { background-image: url("/assets/icons/bag.svg"); }
+.second-section .list li:nth-child(6) { background-image: url("/assets/icons/shop.svg"); }
 
 @media(min-width: 1024px){
   .second-section{
     overflow: hidden;
+    background-image: url('/assets//images/background-gates.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
   }
 
   .second-section > div {

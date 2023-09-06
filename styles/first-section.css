@@ -10,7 +10,7 @@
   align-items: center;
   font-family: 'OpenSans';
   font-size: 1rem;
-  background-image: url("/assets/icons/green-check.png"); 
+  background-image: url("/assets/icons/green-check.svg"); 
   background-repeat: no-repeat; 
   height: 2rem;
   line-height: 1.5rem;
@@ -32,7 +32,7 @@
     font-family: 'Inter';
 }
 
-.clients{
+/* .clients{
   margin-bottom: 3rem;
 }
 
@@ -50,7 +50,7 @@
 
 .tns img{
   max-width: 80%;
-}
+} */
 
 @media(min-width: 1024px){
   .main-content{
@@ -73,7 +73,7 @@
 
   .main-content .list li{
     font-size: 1rem;
-    background-image: url("/assets/icons/green-check.png"); 
+    background-image: url("/assets/icons/green-check.svg"); 
     background-repeat: no-repeat; 
     height: 1.6rem;
     line-height: 1.5rem;
@@ -91,7 +91,7 @@
     width: 21rem;
   }
 
-  .clients h2{
+  /* .clients h2{
     font-size: 1.6rem;
   }
 
@@ -109,5 +109,5 @@
   .tns img{
     max-width: 100%;
     width: 8rem;
-  }
+  } */
 }

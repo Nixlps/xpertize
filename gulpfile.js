@@ -1,5 +1,6 @@
 const { src, dest, series, watch } = require('gulp');
 const concat = require('gulp-concat');
+const webp = require('gulp-webp');
 const browserSync = require('browser-sync').create();
 
 // html
@@ -10,12 +11,30 @@ function html() {
         .pipe( browserSync.stream() )
 }
 
-// assets
+// images
 
-function assets() {
-    return src('./assets/**')
-        .pipe( dest('./dist/assets') )
+function images() {
+    return src('./assets/images/*.png')
+        .pipe( webp() )
+        .pipe( dest('./dist/assets/images') )
+        .pipe( dest('./assets/images') )
         .pipe( browserSync.stream() )
+}
+
+// fonts
+
+function fonts() {
+    return src('./assets/fonts/**')
+    .pipe( dest('./dist/assets/fonts') )
+    .pipe( browserSync.stream() )
+}
+
+// icons
+
+function icons() {
+    return src('./assets/icons/**')
+    .pipe( dest('./dist/assets/icons') )
+    .pipe( browserSync.stream() )
 }
 
 // styles
@@ -49,7 +68,6 @@ const jsMinify = require('gulp-terser');
 function scripts() {
     return src([
             './scripts/highlight-link.js', 
-            './scripts/tns.js',
             './scripts/product-selection.js',
             './scripts/form.js',
         ])
@@ -76,4 +94,4 @@ function watchTask(){
     watch('index.html').on('change', browserSync.reload);
 }
 
-exports.default = series(html, styles, scripts, assets, watchTask);
+exports.default = series(html, styles, scripts, images, fonts, icons, watchTask);

@@ -5,13 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Xpertize </title>
     <link rel="icon" type="image/x-icon" href="/assets/icons/favicon.png">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css">
+
+    <link rel="preload" href="style.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="style.css"></noscript>
+
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css"> -->
 </head>
 <body>
     <div class="container blue-to-white">
         <header class="header">
-            <img class="logo" src="/assets/images/logo.png" alt="Logo Xpertize" title="Logo Xpertize">
+            <img class="logo" src="/assets/images/logo.webp" alt="Logo Xpertize" title="Logo Xpertize">
             
             <nav class="navigation">
                 <a href="#first-section" class="navigation-link"> Sobre nós </a>
@@ -38,27 +41,27 @@
                     <a class="cta-btn" href="#form-section"> Solicitar orçamento </a>
                 </div>
                 
-                <div><img class="img" src="/assets/images/business-img.png" alt="Marketing Digital" title="Marketing Digital"></div>
+                <div><img class="img" src="/assets/images/hero-img.webp" alt="Marketing Digital" title="Marketing Digital"></div>
             </div>
 
-            <div class="clients">
+            <!-- <div class="clients">
                 <h2> Alguns de nossos <br/> clientes </h2>
 
                 <div class="tns">
-                    <div> <img src="/assets/images/unsplash.png" alt="Unsplash Logo" title="Unsplash Logo"> </div>
-                    <div> <img src="/assets/images/notion.png" alt="Notion Logo" title="Notion Logo"> </div>
-                    <div> <img src="/assets/images/intercom.png" alt="INTERCOM Logo" title="INTERCOM Logo" style="margin-top: 4px;"> </div>
-                    <div> <img src="/assets/images/descript.png" alt="descript Logo" title="descript Logo"> </div>
-                    <div> <img src="/assets/images/grammarly.png" alt="grammarly Logo" title="grammarly Logo"> </div>
+                    <div> <img src="/assets/images/unsplash.webp" alt="Unsplash Logo" title="Unsplash Logo"> </div>
+                    <div> <img src="/assets/images/notion.webp" alt="Notion Logo" title="Notion Logo"> </div>
+                    <div> <img src="/assets/images/intercom.webp" alt="INTERCOM Logo" title="INTERCOM Logo" style="margin-top: 4px;"> </div>
+                    <div> <img src="/assets/images/descript.webp" alt="descript Logo" title="descript Logo"> </div>
+                    <div> <img src="/assets/images/grammarly.webp" alt="grammarly Logo" title="grammarly Logo"> </div>
                 </div>
-            </div>
+            </div> -->
         </section>
     </div>
 
     <section class="solid-blue container second-section" id="second-section">
         <div>
-            <div> <img src="/assets/images/notebook-gates.png" alt="Melhore no digital" title="Melhore no digital"> </div>
-            
+            <div> <img src="/assets/images/notebook-gates.webp" loading="eager" alt="Melhore no digital" title="Melhore no digital"> </div>
+
             <div class="text">
                 <h2 class="title">Conte com a <br/> gente para</h2>
             
@@ -75,7 +78,7 @@
     </section>
 
     <section class="container blue-to-white third-section" id="third-section">
-        <div> <img src="/assets/images/solar-system.png" alt="Sistema Solar Midias Digitais" title="Sistema Solar Midias Digitais"> </div>
+        <div> <img src="/assets/images/solar-system.webp" loading="lazy" alt="Sistema Solar Midias Digitais" title="Sistema Solar Midias Digitais"> </div>
 
         <div class="text">
             <h2 class="title"> Sua marca presente nas principais plataformas </h2>
@@ -109,7 +112,7 @@
         <div class="products">
 
             <div class="product-content active" id="media">
-                <div class="img"><img src="/assets/images/midias.png" alt="Megafone" title="Megafone"></div>
+                <div class="img"><img src="/assets/images/midias.svg" loading="lazy" alt="Megafone" title="Megafone"></div>
                 
                 <div class="text">
                     <h2 class="title">Mídias pagas</h2>
@@ -119,7 +122,7 @@
             </div>
 
             <div class="product-content" id="seo">
-                <div class="img"><img src="/assets/images/search.png" alt="SEO" title="SEO"></div>
+                <div class="img"><img src="/assets/images/search.svg" loading="lazy" alt="SEO" title="SEO"></div>
                 
                 <div class="text">
                     <h2 class="title">SEO</h2>
@@ -129,7 +132,7 @@
             </div>
 
             <div class="product-content" id="cro">
-                <div class="img"><img src="/assets/images/graph.png" alt="CRO" title="CRO"></div>
+                <div class="img"><img src="/assets/images/graph.svg" loading="lazy" alt="CRO" title="CRO"></div>
                 
                 <div class="text">
                     <h2 class="title">CRO</h2>
@@ -139,7 +142,7 @@
             </div>
 
             <div class="product-content" id="website">
-                <div class="img"><img src="/assets/images/webdev.png" alt="Webdev" title="Webdev"></div>
+                <div class="img"><img src="/assets/images/webdev.svg" loading="lazy" alt="Webdev" title="Webdev"></div>
                 
                 <div class="text">
                     <h2 class="title">Website</h2>
@@ -154,11 +157,11 @@
         
         <div class="form-wrapper">
             
-            <img src="/assets/images/blue-square.png" class="fun-squares blue">
+            <img src="/assets/images/blue-square.svg" alt="Blue Square" class="fun-squares blue lazyload">
             
-            <img src="/assets/images/yellow-square.png" class="fun-squares yellow">
+            <img src="/assets/images/yellow-square.svg" alt="Yellow Square" class="fun-squares yellow lazyload">
             
-            <img src="/assets/images/small-blue-square.png" class="fun-squares small-blue">
+            <img src="/assets/images/small-blue-square.svg" alt="Small Blue Square" class="fun-squares small-blue lazyload">
 
             <form class="form">
                 
@@ -204,7 +207,7 @@
                 <button class="cta-btn" type="button"> Solicitar orçamento </button>
             </form>
 
-            <img class="form-img" src="/assets/images/form-guy.png" alt="Preencha o formulário ao lado!"  title="Preencha o formulário ao lado!">
+            <img class="form-img lazyload" src="/assets/images/form-guy.webp" alt="Preencha o formulário ao lado!"  title="Preencha o formulário ao lado!">
 
         </div>
 
@@ -214,12 +217,10 @@
         </div>
     </section>
 
-
-    <footer>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
-        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"> </script>
-        <script type="text/javascript"> (function(){ emailjs.init("W7TDB4bDdP6ngk8LT"); })(); </script>
-        <script src="bundle.js"></script>
-    </footer>
+    <!-- Descomentar o script abaixo quando voltar a sessão de clientes -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script> -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript"> (function(){ emailjs.init("W7TDB4bDdP6ngk8LT"); })(); </script>
+    <script src="bundle.js" defer></script>
 </body>
 </html>
