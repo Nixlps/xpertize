@@ -1,23 +1,11 @@
-// const sections = document.querySelectorAll("section[id]");
+const primaryHeader = document.querySelector(".header");
+const scrollWatcher = document.createElement("div");
 
-// window.addEventListener("scroll", navHighlighter);
+scrollWatcher.setAttribute("data-scroll-watcher", "");
+primaryHeader.before(scrollWatcher);
 
-// function navHighlighter() {
- 
-//   let scrollY = window.pageYOffset;
-  
-//   sections.forEach(current => {
-//     const sectionHeight = current.offsetHeight;
-//     const sectionTop = current.offsetTop - 50;
-//     sectionId = current.getAttribute("id");
-    
-//     if (
-//       scrollY > sectionTop &&
-//       scrollY <= sectionTop + sectionHeight
-//     ){
-//       document.querySelector(".navigation a[href*=" + sectionId + "]").classList.add("active");
-//     } else {
-//       document.querySelector(".navigation a[href*=" + sectionId + "]").classList.remove("active");
-//     }
-//   });
-// }
+const navObserver = new IntersectionObserver( (entries) => {
+  primaryHeader.classList.toggle("fixed", !entries[0].isIntersecting);
+})
+
+navObserver.observe(scrollWatcher);

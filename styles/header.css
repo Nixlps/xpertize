@@ -25,6 +25,18 @@
     margin-bottom: 4rem;
   }
 
+  .header.fixed{
+    position: fixed;
+    background-color: #fff;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 999;
+    padding: 15px calc( 8px + 1.5625vw );
+    max-width: none;
+    justify-content: space-evenly;
+  }
+
   .navigation{
     display: inline-block;
   }

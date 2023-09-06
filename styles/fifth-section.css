@@ -40,6 +40,7 @@
 .form-wrapper .form{
   width: 18rem;
   margin: auto;
+  position: relative;
 }
 
 .form input{
@@ -58,6 +59,15 @@
 
 .form-wrapper .form-img{
   display: none;
+}
+
+.error-msg{
+  font-family: 'OpenSans';
+  color: crimson;
+  position: absolute;
+  bottom: -25px;
+  left: 0;
+  font-size: 0.8rem;
 }
 
 .sucess-msg{
@@ -102,6 +112,15 @@
     height: fit-content;
     margin-top: auto;
     margin-bottom: -50px;
+  }
+
+  .error-msg{
+    font-family: 'OpenSans';
+    color: crimson;
+    position: absolute;
+    bottom: 15px;
+    left: 0;
+    font-size: 1.4rem;
   }
 
 }

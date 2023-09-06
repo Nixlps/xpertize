@@ -31,8 +31,37 @@ function sendEmail() {
 }
 
 const formBtn = document.querySelector('.form button');
+
+function formValidate(){
+  var errorMsg = document.querySelector('.form .error-msg');
+  const nameInput = document.getElementById('name').value;
+  const emailInput = document.getElementById('email').value;
+  const phoneInput =  document.getElementById('phone').value;
+      
+
+
+  if(nameInput.length < 2){
+    errorMsg.innerHTML = 'Insira um nome válido';
+    return false
+  }
+
+  if(!(/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(emailInput))){
+    errorMsg.innerHTML = 'Insira um email válido';
+    return false
+  }
+
+  var regexPhone = new RegExp('^\\([0-9]{2}\\)((3[0-9]{3}-[0-9]{4})|(9[0-9]{4}-[0-9]{4}))$');
+
+  if(!regexPhone.test(phoneInput)){
+    errorMsg.innerHTML = 'Insira um telefone válido';
+    return false
+  }
+
+  errorMsg.innerHTML = '';
+  return true
+}
   
 formBtn.addEventListener('click', (e) => {
   e.preventDefault;
-  sendEmail();
+  if (formValidate()) sendEmail();
 })
