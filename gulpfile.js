@@ -13,11 +13,19 @@ function html() {
 
 // images
 
-function images() {
+function imageToWebp() {
     return src('./assets/images/*.png')
         .pipe( webp() )
         .pipe( dest('./dist/assets/images') )
         .pipe( dest('./assets/images') )
+        .pipe( browserSync.stream() )
+}
+
+// svgs
+
+function svgs() {
+    return src('./assets/images/*.svg')
+        .pipe( dest('./dist/assets/images') )
         .pipe( browserSync.stream() )
 }
 
@@ -94,4 +102,4 @@ function watchTask(){
     watch('index.html').on('change', browserSync.reload);
 }
 
-exports.default = series(html, styles, scripts, images, fonts, icons, watchTask);
+exports.default = series(html, styles, scripts, imageToWebp, svgs, fonts, icons, watchTask);
