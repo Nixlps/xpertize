@@ -41,12 +41,7 @@
 .second-section .list li:nth-child(6) { background-image: url("/assets/icons/shop.svg"); }
 
 @media(min-width: 1024px){
-  .second-section{
-    overflow: hidden;
-    background-image: url('/assets//images/background-gates.svg');
-    background-size: cover;
-    background-repeat: no-repeat;
-  }
+  .second-section{ overflow: hidden; }
 
   .second-section > div {
     flex-direction: row-reverse;
