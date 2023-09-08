@@ -45,11 +45,23 @@ html { font-size: calc( 15px + 0.390625vw ); }
   background-color: rgba(1, 156, 219, 1);
 }
 
+.whatsapp-btn{
+  position: fixed;
+  right: 10px;
+  bottom: 40px;
+  z-index: 999;
+  cursor: pointer;
+}
+
 @media(min-width: 1024px){
   .blue-to-white{ background: linear-gradient(137deg,rgba( 228, 242, 248, 1 ) 0%,rgba( 248, 252, 253, 1 ) 60%); }
 
   .cta-btn{ 
     font-size: 0.9rem; 
     padding: 0.9rem 1.15rem;
+  }
+
+  .whatsapp-btn{
+    right: 40px;
   }
 }
