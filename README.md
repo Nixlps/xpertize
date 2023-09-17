@@ -14,7 +14,7 @@ Em seguida, para abrir o modo desenvolvimento digite
 
 # Estrutura
 
-- Para uma maior facilidade na manutenção, as folhas de estilo e scripts foram dívidos por escopo em arquivos separados e concatenados com o gulp. 
+- Para uma maior facilidade na manutenção, as folhas de estilo e scripts foram divididas por escopo em arquivos separados e concatenados com o gulp. 
 
 - O bundle de produção é gerado pelo gulp na pasta **dist**. Os arquivos CSS e JS contidos lá estão minificados e _não devem ser alterados diretamente_
 
