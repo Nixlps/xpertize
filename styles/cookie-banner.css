@@ -70,3 +70,7 @@
 .politica-privacidade strong{
   font-weight: 900;
 }
+
+.logo .politica-privacidade{
+  width: 100%;
+}
