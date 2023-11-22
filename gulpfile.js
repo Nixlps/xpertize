@@ -6,7 +6,10 @@ const browserSync = require('browser-sync').create();
 // html
 
 function html() {
-    return src('index.html')
+    return src([
+            'index.html',
+            'politica-de-privacidade.html'
+        ])
         .pipe( dest('./dist/') )
         .pipe( browserSync.stream() )
 }
@@ -60,6 +63,7 @@ function styles() {
             './styles/third-section.css',
             './styles/fourth-section.css',
             './styles/fifth-section.css',
+            './styles/cookie-banner.css'
         ])
         .pipe( concat('style.css'))
         .pipe( autoprefixer('last 2 versions') )
@@ -78,6 +82,7 @@ function scripts() {
             './scripts/highlight-link.js', 
             './scripts/product-selection.js',
             './scripts/form.js',
+            './scripts/cookie-policy.js'
         ])
     .pipe( concat('bundle.js'))
     .pipe( jsMinify() )

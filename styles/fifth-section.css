@@ -34,7 +34,7 @@
   font-size: 1rem;
   line-height: 2rem;
   color: rgba(138, 143, 143, 1);
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
 }
 
 .form-wrapper .form{
@@ -51,6 +51,49 @@
   margin-bottom: 2rem;
   background: transparent;
   width: -webkit-fill-available;
+}
+
+.form .lgpd{
+  display: flex;
+  font-size: 1rem;
+  color: #8a8f8f;
+  position: relative;
+  margin-bottom: 2rem;
+}
+
+.form .lgpd input{
+  width: unset;
+  margin-right: 10px;
+}
+
+.form #info-icon{
+  cursor: pointer;
+  font-size: 1rem;
+  color: #8a8f8f;
+  margin-bottom: 1rem;
+}
+
+.form #info-icon svg{
+  vertical-align: middle;
+}
+
+.form #popup{
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  padding: 30px;
+  border-radius: 5px;
+  z-index: 1;
+  font-size: 14px;
+}
+
+.form #popup p{
+  margin-bottom: 5px;
+}
+
+.form #popup span{
+  font-weight: 900;
 }
 
 .form .cta-btn{
