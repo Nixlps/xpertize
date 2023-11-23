@@ -48,7 +48,7 @@ html { font-size: calc( 15px + 0.390625vw ); }
 .whatsapp-btn{
   position: fixed;
   right: 10px;
-  bottom: 40px;
+  bottom: 25px;
   z-index: 999;
   cursor: pointer;
 }

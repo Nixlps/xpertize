@@ -77,10 +77,14 @@
   vertical-align: middle;
 }
 
+.form .lgpd-container{
+  position: relative
+}
+
 .form #popup{
   display: none;
   position: absolute;
-  background-color: #fff;
+  bottom: 100%;  background-color: #fff;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   padding: 30px;
   border-radius: 5px;
@@ -97,7 +101,7 @@
 }
 
 .form .cta-btn{
-  float: right;
+  float: left;
 }
 
 .form-wrapper .form-img{
@@ -155,6 +159,10 @@
     height: fit-content;
     margin-top: auto;
     margin-bottom: -50px;
+  }
+
+  .form .cta-btn{
+    float: right;
   }
 
   .error-msg{

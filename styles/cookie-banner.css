@@ -58,19 +58,6 @@
   }
   .show {
     right: 0;
-    bottom: 0;
+    bottom: 2;
   }
-}
-
-.politica-privacidade h1{
-  font-size: 1.5rem;
-  font-weight: 700;
-}
-
-.politica-privacidade strong{
-  font-weight: 900;
-}
-
-.logo .politica-privacidade{
-  width: 100%;
 }
