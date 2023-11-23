@@ -63,7 +63,8 @@ function styles() {
             './styles/third-section.css',
             './styles/fourth-section.css',
             './styles/fifth-section.css',
-            './styles/cookie-banner.css'
+            './styles/cookie-banner.css',
+            './styles/politica-privacidade-page.css'
         ])
         .pipe( concat('style.css'))
         .pipe( autoprefixer('last 2 versions') )

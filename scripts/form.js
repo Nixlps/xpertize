@@ -50,7 +50,6 @@ function formValidate(){
   const nameInput = document.getElementById('name').value;
   const emailInput = document.getElementById('email').value;
   const phoneInput =  document.getElementById('phone').value;
-  const lgpdCheckbox = document.getElementById('lgpdCheckbox')
 
   if(nameInput.length < 2){
     errorMsg.innerHTML = 'Insira um nome válido';
@@ -66,11 +65,6 @@ function formValidate(){
 
   if(!regexPhone.test(phoneInput)){
     errorMsg.innerHTML = 'Insira um telefone válido';
-    return false
-  }
-
-  if(!lgpdCheckbox.checked){
-    errorMsg.innerHTML = 'O aceite a coleta de dados deve ser feito';
     return false
   }
 
