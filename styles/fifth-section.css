@@ -84,7 +84,8 @@
 .form #popup{
   display: none;
   position: absolute;
-  bottom: 100%;  background-color: #fff;
+  bottom: 160%;  
+  background-color: #fff;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   padding: 30px;
   border-radius: 5px;
@@ -159,6 +160,14 @@
     height: fit-content;
     margin-top: auto;
     margin-bottom: -50px;
+  }
+
+  .form .lgpd-container .desc{
+    font-size: 0.8rem;
+  }
+
+  .form #popup{
+    bottom: 110%;  
   }
 
   .form .cta-btn{
